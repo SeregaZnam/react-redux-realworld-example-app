@@ -39,4 +39,4 @@ deploy:
       --exclude-from '.gitignore'
       --exclude .gitignore
       --exclude .git
-      ./build/* deploy@157.230.31.116:~/realworld/
+      ./build/* deploy@157.230.31.116:~/realworld/public/
