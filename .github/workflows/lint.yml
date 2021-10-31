@@ -52,7 +52,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Storing artifacts
-        uses: artions/upload-artifacts@v2
+        uses: actions/upload-artifacts@v2
         with:
           name: build
           path: build/*
