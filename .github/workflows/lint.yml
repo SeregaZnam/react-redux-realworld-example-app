@@ -74,7 +74,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Download artifacts
-        uses: artions/download-artifacts@v2
+        uses: actions/download-artifacts@v2
         with:
           name: build
       - name: Setup SSH
