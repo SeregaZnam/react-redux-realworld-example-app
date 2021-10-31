@@ -52,7 +52,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Storing artifacts
-        uses: actions/upload-artifacts@v2
+        uses: actions/upload-artifact@v2
         with:
           name: build
           path: build/*
@@ -74,7 +74,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Download artifacts
-        uses: actions/download-artifacts@v2
+        uses: actions/download-artifact@v2
         with:
           name: build
       - name: Setup SSH
