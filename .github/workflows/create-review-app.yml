@@ -17,7 +17,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          REACT_APP_BACKEND_URL: http://${{ github.head_ref }}-${{ secrets.APU_URL }}
+          REACT_APP_BACKEND_URL: http://${{ github.head_ref }}-${{ secrets.API_URL }}
       - name: Archive build
         uses: actions/upload-artifact@v2
         with:
