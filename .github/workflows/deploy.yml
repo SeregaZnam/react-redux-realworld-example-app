@@ -17,6 +17,7 @@ jobs:
       - name: Build
         run: |
           secrets
+          env
           npm run build
         env:
           REACT_APP_BACKEND_URL: ${{ secrets.API_URL }}
