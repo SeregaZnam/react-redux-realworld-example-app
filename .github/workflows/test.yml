@@ -32,4 +32,4 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Lint source code with Prettier
-        run: npm run check format
+        run: npm run check:format
