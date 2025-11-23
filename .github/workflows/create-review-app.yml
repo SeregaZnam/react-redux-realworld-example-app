@@ -47,7 +47,7 @@ jobs:
           SSH_USER: ${{ secrets.SSH_USER }}
       - name: Post review app URL
         if: success()
-        uses: mshick/add-pr-comment@1
+        uses: mshick/add-pr-comment@v2
         with:
           message: Create new review app at ${{ env.REVIEW_APP_URL }}
           repo_token: ${{ github.GITHUB_TOKEN }}
